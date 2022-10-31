@@ -6,14 +6,14 @@ class ScaleRuler extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 60.0,
+      height: 30.0,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: 100,
         itemBuilder: (ctx, index) {
           return Center(
             child: Container(
-              height: 60.0,
+              height: 20.0,
               width: 1.0,
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
