@@ -10,7 +10,7 @@ class CenterCardWeigh extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomCard(
-      height: 190,
+      height: 160,
       color: colorGrey,
       child: Center(
         child: Column(
