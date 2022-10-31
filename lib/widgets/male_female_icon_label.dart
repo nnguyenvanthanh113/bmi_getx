@@ -11,7 +11,7 @@ class MaleFemaleIconLabel extends StatelessWidget {
     return Column(
       children: [
         Icon(icon,
-            color: label == 'Male' ? Colors.orange : Colors.pink, size: 100.0),
+            color: label == 'Male' ? Colors.orange : Colors.pink, size: 60.0),
         Text(
           label,
           style: kTextStyleBold(18.0),
