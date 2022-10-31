@@ -1,9 +1,11 @@
 import 'package:bmi_getx/controller/bmi_controller.dart';
 import 'package:bmi_getx/utils/constant.dart';
 import 'package:bmi_getx/views/bmi_details.dart';
+import 'package:bmi_getx/widgets/home_widget/age_card.dart';
 import 'package:bmi_getx/widgets/home_widget/center_card_weight.dart';
 import 'package:bmi_getx/widgets/home_widget/male_female_card.dart';
 import 'package:bmi_getx/widgets/home_widget/nav_bottom.dart';
+import 'package:bmi_getx/widgets/home_widget/weight_info.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -44,23 +46,26 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                kVerticalSpace(44.0),
-                Text(
-                  'BMI Calculator',
-                  style: kTextStyleBold(24.0),
+                kVerticalSpace(15.0),
+                Center(
+                  child: Text(
+                    'BMI',
+                    textAlign: TextAlign.center,
+                    style: kTextStyleBold(32.0),
+                  ),
                 ),
                 kVerticalSpace(24.0),
                 MaleFemaleCard(),
-                kVerticalSpace(24.0),
+                kVerticalSpace(20.0),
                 const CenterCardWeigh(),
-                kVerticalSpace(24.0),
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //   children: [
-                //     WeightInfo(),
-                //     AgeCard(),
-                //   ],
-                // )
+                kVerticalSpace(20.0),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    WeightInfo(),
+                    AgeCard(),
+                  ],
+                )
               ],
             ),
           )),
